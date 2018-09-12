@@ -3,7 +3,7 @@
 //   ARKitApplication
 //
 //  Created by Sathish on 9/7/17.
-//  Copyright © 2018 Vivid. All rights reserved.
+//  Copyright © 2018 smac. All rights reserved.
 //
 
 import UIKit

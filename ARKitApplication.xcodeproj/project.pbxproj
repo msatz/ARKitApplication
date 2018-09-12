@@ -14,6 +14,10 @@
 		92C670762122AAEF009430E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C670742122AAEF009430E2 /* LaunchScreen.storyboard */; };
 		92C670812122AAEF009430E2 /* ARKitApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C670802122AAEF009430E2 /* ARKitApplicationTests.swift */; };
 		92C6708C2122AAEF009430E2 /* ARKitApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6708B2122AAEF009430E2 /* ARKitApplicationUITests.swift */; };
+		92C670A32122AC22009430E2 /* FaceDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C670A12122AC22009430E2 /* FaceDetectionViewController.swift */; };
+		92C670A42122AC22009430E2 /* ARsecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C670A22122AC22009430E2 /* ARsecViewController.swift */; };
+		92E4238B2122B3B8006C8206 /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4238A2122B3B8006C8206 /* Drone.swift */; };
+		92E4238D2122D288006C8206 /* demo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 92E4238C2122D288006C8206 /* demo.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,14 @@
 		92C670872122AAEF009430E2 /* ARKitApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C6708B2122AAEF009430E2 /* ARKitApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitApplicationUITests.swift; sourceTree = "<group>"; };
 		92C6708D2122AAEF009430E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C6709C2122AC0D009430E2 /* Drone.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Drone.dae; sourceTree = "<group>"; };
+		92C6709D2122AC0D009430E2 /* Drone.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Drone.scn; sourceTree = "<group>"; };
+		92C6709F2122AC0D009430E2 /* eb.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = eb.scn; sourceTree = "<group>"; };
+		92C670A02122AC0D009430E2 /* Indoorplant_02.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Indoorplant_02.scn; sourceTree = "<group>"; };
+		92C670A12122AC22009430E2 /* FaceDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionViewController.swift; sourceTree = "<group>"; };
+		92C670A22122AC22009430E2 /* ARsecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARsecViewController.swift; sourceTree = "<group>"; };
+		92E4238A2122B3B8006C8206 /* Drone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drone.swift; sourceTree = "<group>"; };
+		92E4238C2122D288006C8206 /* demo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = demo.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +112,12 @@
 				92C6706B2122AAE5009430E2 /* AppDelegate.swift */,
 				92C6706D2122AAE5009430E2 /* ViewController.swift */,
 				92C6706F2122AAE5009430E2 /* Main.storyboard */,
+				92C670992122AC0D009430E2 /* Objects */,
 				92C670722122AAEF009430E2 /* Assets.xcassets */,
 				92C670742122AAEF009430E2 /* LaunchScreen.storyboard */,
 				92C670772122AAEF009430E2 /* Info.plist */,
+				92C670A22122AC22009430E2 /* ARsecViewController.swift */,
+				92C670A12122AC22009430E2 /* FaceDetectionViewController.swift */,
 			);
 			path = ARKitApplication;
 			sourceTree = "<group>";
@@ -123,6 +138,19 @@
 				92C6708D2122AAEF009430E2 /* Info.plist */,
 			);
 			path = ARKitApplicationUITests;
+			sourceTree = "<group>";
+		};
+		92C670992122AC0D009430E2 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				92C6709C2122AC0D009430E2 /* Drone.dae */,
+				92C6709D2122AC0D009430E2 /* Drone.scn */,
+				92C6709F2122AC0D009430E2 /* eb.scn */,
+				92C670A02122AC0D009430E2 /* Indoorplant_02.scn */,
+				92E4238A2122B3B8006C8206 /* Drone.swift */,
+				92E4238C2122D288006C8206 /* demo.scn */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,7 @@
 				92C670762122AAEF009430E2 /* LaunchScreen.storyboard in Resources */,
 				92C670732122AAEF009430E2 /* Assets.xcassets in Resources */,
 				92C670712122AAE5009430E2 /* Main.storyboard in Resources */,
+				92E4238D2122D288006C8206 /* demo.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C6706E2122AAE5009430E2 /* ViewController.swift in Sources */,
+				92E4238B2122B3B8006C8206 /* Drone.swift in Sources */,
+				92C670A42122AC22009430E2 /* ARsecViewController.swift in Sources */,
 				92C6706C2122AAE5009430E2 /* AppDelegate.swift in Sources */,
+				92C670A32122AC22009430E2 /* FaceDetectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HGKU963PA;
 				INFOPLIST_FILE = ARKitApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HGKU963PA;
 				INFOPLIST_FILE = ARKitApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
